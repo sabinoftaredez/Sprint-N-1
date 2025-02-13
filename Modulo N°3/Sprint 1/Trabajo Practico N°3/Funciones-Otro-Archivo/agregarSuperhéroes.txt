@@ -1,6 +1,6 @@
 [
 {
-        "id": 4;
+        "id": 4,
         "nombreSuperhéroe":"Black Widow",
         "nombreReal":"Natasha Romanoff",
         "nombreSocial":"Vigilante",
@@ -10,10 +10,10 @@
         "poder":["Maestría en Combate","Espionaje"],
         "habilidadEspecial":"Entrenamiento de Elite",
         "aliado":"Hankeye",
-        "enemigo":"Task-Master",
+        "enemigo":"Task-Master"
     },
     {
-        "id": 5;
+        "id": 5,
         "nombreSuperhéroe":"Hulk",
         "nombreReal":"Bruce Banner",
         "nombreSocial":"Vigilante",
@@ -23,10 +23,10 @@
         "poder":["Fuerza Bruta","Resistencia"],
         "habilidadEspecial":"Regeneración Rápida",
         "aliado":"Iron-Man",
-        "enemigo":"Dios Loki",
+        "enemigo":"Dios Loki"
     },
     {
-        "id": 6;
+        "id": 6,
         "nombreSuperhéroe":"Capital America",
         "nombreReal":"Steve Rogers",
         "nombreSocial":"Vigilante",
@@ -36,10 +36,10 @@
         "poder":["Fuerza Aumentada","Agilidad Aumentada"],
         "habilidadEspecial":"Escudo de Piedra del Espacio",
         "aliado":"Bucky Barnes",
-        "enemigo":"Red Skull",
+        "enemigo":"Red Skull"
     },
     {
-        "id": 7;
+        "id": 7,
         "nombreSuperhéroe":"Doctor Strange",
         "nombreReal":"Stephen Strange",
         "nombreSocial":"Vigilante",
@@ -49,6 +49,6 @@
         "poder":"Magia Milenaria",
         "habilidadEspecial":"Hechizos",
         "aliado":"Wong",
-        "enemigo":"Dormammu",
+        "enemigo":"Dormammu"
     }
 ]

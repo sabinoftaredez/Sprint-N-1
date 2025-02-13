@@ -20,8 +20,45 @@ export function leerSuperhéroes (ruta) {
         const datos = fs.readFileSync(ruta, 'utf-8');
         const superhéroeArray = JSON.parse(datos);
 // Convertir a Instancias de Superhéroe
-        const superhéroe = superhéroeArray.map(hro => new Superhéroe(hro.id, hro.nombreSuperhéroe, hro.nombreReal, hro.nombreSociedad, hro.edad, hro.planetaOrigen, hro.debilidad, hro.poder, hro.habilidadEspecial, hro.aliado, hro.enemigo));
+        const superhéroes = superhéroeArray.map(hro => new Superhéroe(
+                hro.id,
+                hro.nombreSuperhéroe,
+                hro.nombreReal,
+                hro.nombreSociedad,
+                hro.edad,
+                hro.planetaOrigen,
+                hro.debilidad,
+                hro.poder,
+                hro.habilidadEspecial,
+                hro.aliado,
+                hro.enemigo
+        ));
 // Ordenar por Nombre de Superhéroe
-superhéroe.sort((a, b) => a.Superhéroe.localeCompare(b.Superhéroe));
-return superhéroe;
+superhéroes.sort((a, b) => a.edad - b.edad);
+return superhéroes;
+}
+// Nueva Función para Agregar los Superhéroes restantes
+export function agregarSuperhéroes (rutaOriginal, rutaNuevos) {
+        const datosOriginal = fs.readFileSync(rutaOriginal, 'utf-8');
+        const datosNuevos = fs.readFileSync(rutaNuevos, 'utf-8');
+        const superhéroesArrayOriginales = JSON.parse(datosOriginal);
+        const superhéroesArrayNuevos = JSON.parse(datosNuevos);
+// Convertir los Nuevos Superhéroes a Instancias de Superhéroes
+        const nuevosSuperhéroes = superhéroesArrayNuevos.map(hro => new Superhéroe(
+                hro.id,
+                hro.nombreSuperhéroe,
+                hro.nombreReal,
+                hro.nombreSociedad,
+                hro.edad,
+                hro.planetaOrigen,
+                hro.debilidad,
+                hro.poder,
+                hro.habilidadEspecial,
+                hro.aliado,
+                hro.enemigo));
+// Combinar Los Superhéroes
+        const combinarListas = [...superhéroesArrayOriginales, ...nuevosSuperhéroes];
+// Guardar la Nueva Lista de Superhéroes
+fs.writeFileSync(rutaOriginal, JSON.stringify(combinarListas, null, 2));
+console.log('Lista de Superhéroes Mezclada Exitosamente!');
 }
