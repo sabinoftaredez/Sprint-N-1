@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Spider-Man",
+    "atributo": "nombre",
+    "edad": 25
+  },
+  {
+    "id": 2,
+    "nombre": "Iron-Man",
+    "atributo": "nombre",
+    "edad": 45
+  },
+  {
+    "id": 3,
+    "nombre": "Hela",
+    "atributo": "nombre",
+    "edad": 3000
+  },
+  {
+    "id": 4,
+    "nombre": "Black-Widow",
+    "atributo": "nombre",
+    "edad": 23
+  },
+  {
+    "id": 5,
+    "nombre": "Hulk",
+    "atributo": "nombre",
+    "edad": 40
+  },
+  {
+    "id": 6,
+    "nombre": "Capitan-America",
+    "atributo": "nombre",
+    "edad": 103
+  },
+  {
+    "id": 7,
+    "nombre": "Doctor-Strange",
+    "atributo": "nombre",
+    "edad": 42
+  }
+]
